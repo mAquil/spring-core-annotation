@@ -29,7 +29,8 @@ public class Main {
 //        Movie movie1=(Movie) ctx.getBean("Movie.class");
 //        Movie movie2=(Movie) ctx.getBean("Movie1.class");
 //        System.out.println(movie1==movie2);
-
+        AnnotationConfigApplicationContext c=(AnnotationConfigApplicationContext) ctx;
+        c.destroy();
     }
 
 }
