@@ -1,6 +1,7 @@
 package com.stackroute.config;
 
 import com.stackroute.demo.BeanLifecycleDemoBean;
+import com.stackroute.demo.BeanPostProcessorDemoBean;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -34,10 +35,17 @@ public class SpringBeanConfiguration {
             return actor;
         }
 
-        @Bean
+        @Bean()
         public BeanLifecycleDemoBean getMessage()
         {
             BeanLifecycleDemoBean beanLifecycleDemoBean=new BeanLifecycleDemoBean();
             return beanLifecycleDemoBean;
+        }
+
+        @Bean(name = "BeanPostProcessorDemoBean.class")
+        public BeanPostProcessorDemoBean getBeanPostProcessorDemoBean()
+        {
+            BeanPostProcessorDemoBean beanPostProcessorDemoBean=new BeanPostProcessorDemoBean();
+            return beanPostProcessorDemoBean;
         }
 }

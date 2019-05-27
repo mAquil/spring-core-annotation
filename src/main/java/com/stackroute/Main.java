@@ -1,6 +1,7 @@
 package com.stackroute;
 
 import com.stackroute.config.AppConfiguration;
+import com.stackroute.demo.BeanPostProcessorDemoBean;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -21,7 +22,8 @@ public class Main {
 
         System.out.println(bean.toString());
 //
-//
+        BeanPostProcessorDemoBean beanPostProcessorDemoBean=(BeanPostProcessorDemoBean) ctx.getBean("BeanPostProcessorDemoBean.class");
+        System.out.println(beanPostProcessorDemoBean);
 //
 //        Movie bean1=(Movie) ctx.getBean("Movie1.class");
 //        System.out.println(bean.toString());
