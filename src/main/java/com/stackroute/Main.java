@@ -19,9 +19,15 @@ public class Main {
 //        System.out.println("actor's gender: "+bean.getActor().getGender());
         System.out.println(bean.toString());
 
+
+
+        Movie bean1=(Movie) ctx.getBean("Movie1.class");
+        System.out.println(bean.toString());
+
         Movie movie1=(Movie) ctx.getBean("Movie.class");
-        Movie movie2=(Movie) ctx.getBean("Movie.class");
+        Movie movie2=(Movie) ctx.getBean("Movie1.class");
         System.out.println(movie1==movie2);
+
     }
 
 }
