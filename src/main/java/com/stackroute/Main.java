@@ -17,16 +17,18 @@ public class Main {
 //        System.out.println("actor's name: "+ bean.getActor().getName());
 //        System.out.println("actor's age: "+bean.getActor().getAge());
 //        System.out.println("actor's gender: "+bean.getActor().getGender());
+
+
         System.out.println(bean.toString());
-
-
-
-        Movie bean1=(Movie) ctx.getBean("Movie1.class");
-        System.out.println(bean.toString());
-
-        Movie movie1=(Movie) ctx.getBean("Movie.class");
-        Movie movie2=(Movie) ctx.getBean("Movie1.class");
-        System.out.println(movie1==movie2);
+//
+//
+//
+//        Movie bean1=(Movie) ctx.getBean("Movie1.class");
+//        System.out.println(bean.toString());
+//
+//        Movie movie1=(Movie) ctx.getBean("Movie.class");
+//        Movie movie2=(Movie) ctx.getBean("Movie1.class");
+//        System.out.println(movie1==movie2);
 
     }
 
